@@ -398,7 +398,7 @@ static inline int pfn_to_bitidx(struct page *page, unsigned long pfn)
  *
  * Return: pageblock_bits flags
  */
-static __always_inline unsigned long __get_pfnblock_flags_mask(struct page *page,
+static unsigned long __get_pfnblock_flags_mask(struct page *page,
 					unsigned long pfn,
 					unsigned long end_bitidx,
 					unsigned long mask)
